@@ -1,7 +1,6 @@
 package com.groweasy.groweasyapi.notification.controllers;
 
-import com.groweasy.groweasyapi.loginregister.facade.AuthenticationFacade;
-import com.groweasy.groweasyapi.loginregister.services.AuthService;
+import com.groweasy.groweasyapi.auth.facade.AuthenticationFacade;
 import com.groweasy.groweasyapi.notification.model.entities.Notification;
 import com.groweasy.groweasyapi.notification.services.NotificationService;
 import io.swagger.v3.oas.annotations.tags.Tag;

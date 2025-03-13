@@ -1,7 +1,7 @@
 package com.groweasy.groweasyapi.report.services;
 
-import com.groweasy.groweasyapi.loginregister.model.entities.UserEntity;
-import com.groweasy.groweasyapi.loginregister.services.AuthService;
+import com.groweasy.groweasyapi.auth.model.entities.UserEntity;
+import com.groweasy.groweasyapi.auth.services.AuthService;
 import com.groweasy.groweasyapi.monitoring.model.entities.Device;
 import com.groweasy.groweasyapi.monitoring.model.entities.Sensor;
 import com.groweasy.groweasyapi.monitoring.repository.DeviceRepository;

@@ -1,7 +1,7 @@
 package com.groweasy.groweasyapi.monitoring.services;
 
-import com.groweasy.groweasyapi.loginregister.facade.AuthenticationFacade;
-import com.groweasy.groweasyapi.loginregister.model.entities.UserEntity;
+import com.groweasy.groweasyapi.auth.facade.AuthenticationFacade;
+import com.groweasy.groweasyapi.auth.model.entities.UserEntity;
 import com.groweasy.groweasyapi.monitoring.model.entities.*;
 import com.groweasy.groweasyapi.monitoring.model.enums.DeviceStatus;
 import com.groweasy.groweasyapi.monitoring.repository.DeviceConfigRepository;
@@ -33,23 +33,6 @@ public class DeviceService {
 
         deviceRepository.save(device);
     }
-
-//    public SensorConfigResponse updateConfig(SensorConfigRequest config) {
-//
-//        UserEntity user = authenticationFacade.getCurrentUser();
-//
-//        Device device = deviceRepository.findByUserId(user.getId())
-//                .orElseThrow(() -> new RuntimeException("Device not found"));
-//
-//        DeviceConfig deviceConfig = deviceConfigRepository.findByDeviceId(device.getId())
-//                .orElseThrow(() -> new RuntimeException("Config not found"));
-//
-//        deviceConfig.update(config);
-//
-//        DeviceConfig newConfig = deviceConfigRepository.save(deviceConfig);
-//
-//        return SensorConfigResponse.fromEntity(newConfig);
-//    }
 
     public Device getDeviceById(Long id) {
 
