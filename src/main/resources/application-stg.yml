@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: GROWEASY_STG
+  datasource:
+    url: jdbc:mysql://localhost:3306/groweasydb?useSSL=true&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: false
+    show-sql: true
