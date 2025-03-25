@@ -24,6 +24,7 @@ import org.springframework.security.web.authentication.www.BasicAuthenticationFi
 import org.springframework.web.cors.CorsConfiguration;
 
 import java.util.Arrays;
+import java.util.List;
 
 @Configuration
 @RequiredArgsConstructor
@@ -33,7 +34,7 @@ public class WebSecurityConfig {
 
     private final TokenUtil tokenUtil;
     private final UserDetailsService userDetailsService;
-    private static final String[] ALLOWED_ORIGIN = { "http://localhost:4200", "https://...web.app", "https://...firebaseapp.com", "https://...netlify.app", "https://groweasyapp.netlify.app", "https://wokwi.com"  };
+    private static final String[] ALLOWED_ORIGIN = { "http://localhost:4200", "https://groweasyweb.netlify.app", "https://wokwi.com"  };
     private static final String[] SWAGGER_UI_AUTH_WHITELIST = { "/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html" };
     private static final String[] ENDPOINTS_ROL_INVITED = { "/api/v1/...", "/api/v1/..." };
 
@@ -43,8 +44,8 @@ public class WebSecurityConfig {
                 .cors(cors -> cors.configurationSource(request -> {
                     CorsConfiguration corsConfig = new CorsConfiguration();
                     corsConfig.setAllowedOrigins(Arrays.asList(ALLOWED_ORIGIN));
-                    corsConfig.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE"));
-                    corsConfig.setAllowedHeaders(Arrays.asList("Content-Type", "Authorization"));
+                    corsConfig.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
+                    corsConfig.setAllowedHeaders(List.of("Content-Type", "Authorization"));
                     corsConfig.setAllowCredentials(true);
                     return corsConfig;
                 }))
