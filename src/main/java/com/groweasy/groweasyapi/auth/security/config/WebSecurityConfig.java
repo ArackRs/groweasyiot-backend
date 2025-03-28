@@ -34,7 +34,7 @@ public class WebSecurityConfig {
 
     private final TokenUtil tokenUtil;
     private final UserDetailsService userDetailsService;
-    private static final String[] ALLOWED_ORIGIN = { "http://localhost:4200", "https://groweasy.vercel.app", "https://wokwi.com"  };
+    private static final String[] ALLOWED_ORIGIN = { "http://localhost:4200", "https://groweasyiot.vercel.app", "https://wokwi.com"  };
     private static final String[] SWAGGER_UI_AUTH_WHITELIST = { "/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html" };
     private static final String[] ENDPOINTS_ROL_INVITED = { "/api/v1/...", "/api/v1/..." };
 

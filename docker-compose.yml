@@ -1,7 +1,7 @@
 services:
   groweasy-api:
-    image: arackrs/groweasy
-    container_name: groweasy-backend
+    image: arackrs/groweasyiot
+    container_name: groweasyiot-backend
     build:
       context: .
       dockerfile: Dockerfile
