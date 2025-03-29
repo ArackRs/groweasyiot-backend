@@ -1,6 +1,6 @@
 package com.groweasy.groweasyapi.monitoring.model.entities;
 
-import com.groweasy.groweasyapi.loginregister.model.entities.UserEntity;
+import com.groweasy.groweasyapi.auth.model.entities.UserEntity;
 import com.groweasy.groweasyapi.monitoring.model.enums.DeviceStatus;
 import com.groweasy.groweasyapi.monitoring.model.enums.SensorType;
 import jakarta.persistence.*;

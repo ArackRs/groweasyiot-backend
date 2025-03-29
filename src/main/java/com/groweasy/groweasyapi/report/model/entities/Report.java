@@ -1,6 +1,6 @@
 package com.groweasy.groweasyapi.report.model.entities;
 
-import com.groweasy.groweasyapi.loginregister.model.entities.UserEntity;
+import com.groweasy.groweasyapi.auth.model.entities.UserEntity;
 import com.groweasy.groweasyapi.report.model.enums.RecommendationEnum;
 import jakarta.persistence.*;
 import lombok.*;

@@ -1,6 +1,5 @@
 package com.groweasy.groweasyapi.monitoring.model.entities;
 
-import com.groweasy.groweasyapi.loginregister.model.entities.UserEntity;
 import jakarta.persistence.*;
 import lombok.*;
 

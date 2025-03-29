@@ -17,7 +17,7 @@ import org.springframework.http.HttpHeaders;
                 description = "This API provides endpoints for user authentication, post management, and following functionality, modeled after Twitter.",
                 termsOfService = "https://groweasy.example.com/terms_and_conditions",
                 version = "1.0.0",
-                license = @License(name = "Standard Software Use License for TwitterAPI", url = "https://groweasy.example.com/license")
+                license = @License(name = "Standard Software Use License for GrowEasyAPI", url = "https://groweasy.example.com/license")
         ),
         security = @SecurityRequirement(name = "Bearer Authentication")
 )

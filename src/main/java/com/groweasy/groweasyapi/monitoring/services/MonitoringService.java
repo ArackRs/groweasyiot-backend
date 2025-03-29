@@ -1,7 +1,7 @@
 package com.groweasy.groweasyapi.monitoring.services;
 
-import com.groweasy.groweasyapi.loginregister.model.entities.UserEntity;
-import com.groweasy.groweasyapi.loginregister.repository.UserRepository;
+import com.groweasy.groweasyapi.auth.model.entities.UserEntity;
+import com.groweasy.groweasyapi.auth.repository.UserRepository;
 import com.groweasy.groweasyapi.monitoring.model.dto.request.DeviceDataRequest;
 import com.groweasy.groweasyapi.monitoring.model.dto.response.DeviceConfigResponse;
 import com.groweasy.groweasyapi.monitoring.model.entities.DeviceConfig;
