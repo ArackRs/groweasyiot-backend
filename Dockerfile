@@ -11,8 +11,9 @@ COPY .mvn ./.mvn
 COPY mvnw ./
 COPY src ./src
 
+# Dar permiso de ejecución al script mvnw
 # Descargar las dependencias y construir la aplicación
-RUN ./mvnw clean package -DskipTests
+RUN chmod +x mvnw && ./mvnw clean package -DskipTests
 
 # Etapa 2: Ejecución
 FROM eclipse-temurin:21
